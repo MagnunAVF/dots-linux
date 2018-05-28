@@ -35,6 +35,10 @@ echo "Generating ssh key ..."
 ./setup-ssh-key.sh "$user_email"
 echo "DONE!"
 
+echo "Installing terminal ..."
+./setup-terminal.sh
+echo "DONE!"
+
 echo "Setup finished!"
 echo "Your ssh key is in your clipboard. Just paste it!"
 echo "For more specific configs, see the README file."

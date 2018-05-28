@@ -16,10 +16,5 @@ sudo apt-get install httpie -y
 # GIT
 sudo apt-get install git-core git -y
 
-# Terminal
-sudo apt-get install fish -y
-sudo apt-get install tmux -y
-sudo apt-get install guake -y
-
 # Clis
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh

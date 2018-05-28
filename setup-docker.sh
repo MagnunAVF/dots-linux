@@ -4,7 +4,7 @@ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58
 sudo apt-add-repository 'deb https://apt.dockerproject.org/repo ubuntu-xenial main'
 sudo apt-get update -y
 sudo apt-get install -y docker-engine
-sudo usermod -aG docker (whoami)
+sudo usermod -aG docker $(whoami)
 
 # Docker Compose
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
