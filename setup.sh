@@ -2,11 +2,12 @@
 
 if [ $# -ne 1 ]
 then
-  echo 'Usage: ./setup "user@email.com"'
+  echo 'Usage: ./setup "user name" "user@email.com"'
   exit 1
 fi
 
-user_email="$1"
+user_name="$1"
+user_email="$2"
 
 echo "Hello !"
 echo "Starting"
@@ -29,6 +30,10 @@ echo "DONE!"
 
 echo "Installing Docker ..."
 ./setup-docker.sh
+echo "DONE!"
+
+echo "Setting git configs ..."
+./setup-git.sh "$user_name" "$user_email"
 echo "DONE!"
 
 echo "Generating ssh key ..."
