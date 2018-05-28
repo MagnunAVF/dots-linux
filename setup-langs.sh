@@ -4,7 +4,7 @@ sudo apt-get update -y
 # JavaScript - Node and React
 sudo apt-get install nodejs -y
 sudo apt-get install npm -y
-npm i create-react-app
+sudo npm install -g create-react-app
 
 # Rbenv - Ruby and Rails install
 cd
