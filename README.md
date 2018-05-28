@@ -11,8 +11,16 @@ Just run:
 
 # NeoVim Plugins Setup
 After setup, to install neovim plugins:
+```
 nvim
+```
+In nvim editor:
+```
 :PlugInstall
+
 :UpdateRemotePlugins
+
 :q!
+
 :q!
+```
