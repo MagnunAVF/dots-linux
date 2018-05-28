@@ -20,3 +20,6 @@ sudo apt-get install git-core git -y
 sudo apt-get install fish -y
 sudo apt-get install tmux -y
 sudo apt-get install guake -y
+
+# Clis
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
