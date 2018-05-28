@@ -1,13 +1,12 @@
+# updating ...
+sudo apt-get update -y
+
 # JavaScript - Node and React
 sudo apt-get install nodejs -y
 sudo apt-get install npm -y
 npm i create-react-app
 
 # Rbenv - Ruby and Rails install
-sudo apt-get update -y
-sudo apt-get install zlib1g-dev build-essential libssl-dev libreadline-dev \
-                 libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev \
-                 libcurl4-openssl-dev python-software-properties libffi-dev -y
 cd
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
