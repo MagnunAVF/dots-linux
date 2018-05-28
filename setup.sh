@@ -1,3 +1,13 @@
+#!/usr/bin/env bash
+
+if [ $# -ne 1 ]
+then
+  echo 'Usage: ./setup "user@email.com"'
+  exit 1
+fi
+
+user_email="$1"
+
 echo "Hello !"
 echo "Starting"
 
@@ -21,6 +31,11 @@ echo "Installing Docker ..."
 ./setup-docker.sh
 echo "DONE!"
 
+echo "Generating ssh key ..."
+./setup-ssh-key.sh "$user_email"
+echo "DONE!"
+
 echo "Setup finished!"
+echo "Your ssh key is in your clipboard. Just paste it!"
 echo "For more specific configs, see the README file."
 echo "Enjoy your new dev env! =D"

@@ -6,7 +6,7 @@ Automated setup for a new Linux development machine.
 
 Just run:
 ```
-./setup.sh
+./setup.sh user_email
 ```
 
 # NeoVim Plugins Setup
