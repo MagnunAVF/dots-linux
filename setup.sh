@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ $# -ne 1 ]
+if [ $# -ne 2 ]
 then
   echo 'Usage: ./setup "user name" "user@email.com"'
   exit 1
