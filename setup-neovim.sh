@@ -12,10 +12,10 @@ sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 sudo update-alternatives --config editor
 
 # plugin manager
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+sudo curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # init config file
-mkdir -p ~/.config/nvim
-touch ~/.config/nvim/init.vim
+sudo mkdir -p ~/.config/nvim
+sudo touch ~/.config/nvim/init.vim
 sudo cp ./init.vim ~/.config/nvim/init.vim
